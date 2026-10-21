@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Starter</title>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section class="library">
+            <div class="title">
+                <h2>My Library</h2>
+                <div class="underline"></div>
+            </div>
+            <!--  filter buttons -->
+            <div class="btn-container">
+                <button command="show-modal" commandfor="add-book">Add Book</button>
+                <dialog id="add-book">
+                    <form id="add-book-form">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" />
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" />
+                        <label for="pages">Pages</label>
+                        <input type="number" name="pages" id="pages" />
+                        <label for="read">Read</label>
+                        <input type="text" name="read" id="read" />
+                        <button type="submit" id="addBtn">Add</button>
+                    </form>
+                    <button commandfor="add-book" command="close">Close</button>
+                </dialog>
+            </div>
+            <!-- library item -->
+            <div class="section-center">
+                <!-- single item -->
+                <!--                <article class="library-item">-->
+                <!--                    <img src="library-item.jpeg" class="photo" alt="Library Item">-->
+                <!--                    <div class="item-info">-->
+                <!--                        <header>-->
+                <!--                            <h4>Buttermilk Pancakes</h4>-->
+                <!--                            <h4 class="price">£5</h4>-->
+                <!--                        </header>-->
+                <!--                        <p class="item-text">-->
+                <!--                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!--                </article>-->
+                <!-- end of single item -->
+            </div>
+        </section>
+        <!-- javascript -->
+        <script src="index.js"></script>
+    </body>
+</html>
