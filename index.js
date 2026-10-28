@@ -59,16 +59,14 @@ window.addEventListener("DOMContentLoaded", function () {
     displayLibraryItems(myLibrary);
 });
 
-function Book(id, title, author, pageNum, read) {
-    // the constructor...
-    if (!new.target) {
-        throw Error("You must use the 'new' operator to call the constructor");
+class Book {
+    constructor(id, title, author, pageNum, read) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.pageNum = pageNum;
+        this.read = read;
     }
-    this.id = id;
-    this.title = title;
-    this.author = author;
-    this.pageNum = pageNum;
-    this.read = read;
 }
 
 function addBookToLibrary(title, author, pageNum, read) {
